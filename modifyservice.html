@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/modifyservice.css">
+    </head>
+    <body>
+        <div id="topbar">
+            <button id="goback"><-</button>
+        </div><br><br>
+        <div id="container">
+            <h2>Selecciona los datos a modificar.</h2><br><br>
+            <select name="services" id="services">
+                <option value="none" selected>Selecciona un servicio</option>
+            </select><br><br>
+            <div id="datas" class="hidden"></div>
+            <div id="modify" class="hidden">
+                <input id="user" type="email" placeholder="Usuario" required><br>
+                <input id="password" type="text" placeholder="Contraseña" required><br>
+                <div id="error" class="hidden"></div>
+                <div id="success" class="hidden">¡Datos modificados con éxito!<br><br></div>
+                <div class="buttons">
+                    <button id="save">Guardar</button><br>
+                    <button id="cancel">Cancelar</button><br>
+                </div>
+                <a id="delete" href="#">Eliminar cuenta.</a>
+            </div>
+        </div>
+        <div id="confirm" class="hidden">
+            <div id="text">
+                <h2>¿Estás seguro que deseas borrar la cuenta?</h2>
+                <h3>Esta acción es permanente.</h3>
+            </div>
+            <div id="successb" class="hidden"><br>¡Cuenta eliminada con éxito!</div>
+            <div id="buttons" class="buttons">
+                <button id="accept">Aceptar</button>
+                <button id="cancelb">Cancelar</button>
+            </div>
+        </div>
+        <div id="addd" class="hidden">
+            <h2>Agregar una cuenta nueva.</h2><br><br>
+            <input id="usera" type="email" placeholder="Usuario" required><br>
+            <input id="passworda" type="text" placeholder="Contraseña" required><br>
+            <div id="errora" class="hidden"></div>
+            <div id="successa" class="hidden">¡Cuenta agregada con éxito!<br><br></div>
+            <div class="buttons">
+                <button id="savea">Guardar</button><br>
+                <button id="cancela">Cancelar</button><br>
+            </div>
+        </div>
+    </body>
+    <script src="js/modifyservice.js"></script>
+</html>

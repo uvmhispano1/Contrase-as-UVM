@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/verified.css">
+    <title>UVM Contraseñas</title>
+  </head>
+  <body>
+    <div id="verified" class="hidden">
+      <h1>Te has verificado correctamente.</h1>
+    </div>
+    <div id="container" class="hidden">
+      <div id="splash">
+          <img src="res/uvm_logo.png" alt="UVM Logo" class="img-splash"><br><br>
+          <img src="res/spinner2.gif" alt="Cargando" class="img-loading">
+      </div>
+      <br>
+      <div class="loading"></div>
+    </div>
+    <div id="start" class="hidden">
+      <h1>¡Comencemos!</h1>
+    </div>
+  </body>
+  <script src="js/verified.js"></script>
+</html>

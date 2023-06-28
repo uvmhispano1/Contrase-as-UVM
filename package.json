@@ -1,0 +1,23 @@
+{
+  "name": "passwords",
+  "version": "1.0.0",
+  "description": "Gestor de contraseñas para estudiantes de UVM",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "keywords": [
+    "contrasenias",
+    "uvm"
+  ],
+  "author": "Guillermo Flores",
+  "license": "BSD-3-Clause",
+  "devDependencies": {
+    "electron": "^25.1.1"
+  },
+  "dependencies": {
+    "custom-electron-titlebar": "^4.2.3",
+    "fs": "^0.0.1-security",
+    "nodemailer": "^6.9.3"
+  }
+}

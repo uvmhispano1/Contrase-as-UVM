@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/mainmenu.css">
+    </head>
+    <body>
+        <div id="topbar">
+            <button id="goback" class="hidden"><-</button>
+            <button id="settings"><img id="bars" src="res/settings.png"></button>
+        </div>
+        <div id="logo">
+            <img id="imglogo" src="res/uvm_logo.png" alt="UVM Logo" class="img-splash">
+        </div> <br><br>
+        <div id="buttons">
+            <button id="passgen">Generador de contraseñas</button> 
+            <button id="showpass">Ver contraseñas</button>
+            <button id="editpass">Modificar contraseñas</button>
+        </div>
+        <div id="modify" class="hidden">
+            <button id="addservice" class="modifybttns">Agregar nuevo servicio</button>
+            <button id="modifyservice" class="modifybttns">Modificar un servicio ya existente</button>
+        </div>
+    </body>
+    <script src="js/mainmenu.js"></script>
+</html>

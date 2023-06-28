@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/addservice.css">
+    </head>
+    <body>
+        <div id="topbar">
+            <button id="goback"><-</button>
+        </div><br><br>
+        <div id="container" class="hidden">
+            <h1>Selecciona un servicio.</h1>
+            <div id="pictures">
+                <button id="UVM Gradebook" class="picbtn">
+                    <img src="res/gradebook.png">
+                </button>
+                <button id="UVM Portico" class="picbtn">
+                    <img src="res/portico.png">
+                </button>
+                <button id="Microsoft" class="picbtn">
+                    <img src="res/microsoft.png">
+                </button>
+                <button id="Google" class="picbtn">
+                    <img src="res/google.png">
+                </button>
+                <button id="Apple" class="picbtn">
+                    <img id="applebtn" src="res/apple.png">
+                </button>
+                <button id="Microsoft Teams" class="picbtn">
+                    <img src="res/teams.png">
+                </button>
+                <button id="Blackboard" class="picbtn">
+                    <img src="res/blackboard.png">
+                </button>
+                <button id="Matlab" class="picbtn">
+                    <img src="res/matlab.png">
+                </button>
+                <button id="Pearson" class="picbtn">
+                    <img src="res/pearson.png">
+                </button>
+                <button id="Canva" class="picbtn">
+                    <img src="res/canva.png">
+                </button>
+            </div>
+            <div id="otherbtn">
+                <button id="other">
+                    Agregar otro
+                </button>
+            </div>
+        </div>
+        <div id="neww" class="hidden">
+            <br><br><br><br>
+            <h2>Agregar un nuevo servicio.</h2><br><br>
+            <input id="service" type="text" placeholder="Servicio o plataforma" required><br>
+            <input id="user" type="email" placeholder="Usuario" required><br>
+            <input id="password" type="text" placeholder="Contraseña" required>
+            <div id="error" class="hidden"></div>
+            <div id="success" class="hidden">¡Datos agregados con éxito!</div>
+            <button id="submit">Agregar</button>
+        </div>
+    </body>
+    <script src="js/addservice.js"></script>
+</html>

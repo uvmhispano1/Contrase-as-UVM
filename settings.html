@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/settings.css">
+    <title>UVM Contraseñas</title>
+  </head>
+  <body>
+    <div id="topbar">
+        <button id="goback"><-</button>
+        <button id="about">Acerca de</button>
+    </div><br><br>
+    <div id="info">
+        <h2>Configuración</h2><br><br>
+        <table>
+            <tr>
+              <td>Nombre:</td>
+              <td><input id="name" type="text" placeholder="Nombre"></td>
+            </tr>
+            <tr>
+              <td>Correo:</td>
+              <td><input id="user" type="email" placeholder="Correo"></td>
+            </tr>
+            <tr>
+              <td>Teléfono:</td>
+              <td><input id="phone" type="tel" placeholder="Teléfono"></td>
+            </tr>
+            <tr>
+                <td>Matrícula:</td>
+                <td><input id="tuition" type="tel" placeholder="Matrícula"></td>
+            </tr>
+            <tr>
+                <td>Carrera:</td>
+                <td><input id="major" type="text" placeholder="Carrera"></td>
+            </tr>
+            <tr>
+                <td>Cumpleaños:</td>
+                <td><input id="birthdate" type="date" placeholder="Cumpleaños"></td>
+            </tr>
+          </table>
+          <div id="error" class="hidden"></div><br><br>
+          <button id="save">Guardar</button><br>
+          <button id="reset">Resetear app</button>
+    </div>
+    <div id="verify" class="hidden">
+      <br><br><br><br>
+      <h2>Introduce el código que se te <br>envió por email.</h2><br><br>
+      <input id="code" type="text" placeholder="Código." required>
+      <div id="errorv" class="hidden">
+      </div>
+      <div id="success" class="hidden">¡Datos modificados con éxito!</div><br><br>
+      <button id="submitv">Verificar</button><br>
+      <a id="gobackl" href="#">¡Ups! Puse mal mis datos.</a>
+    </div>
+  </body>
+  <script src="js/settings.js"></script>
+</html>

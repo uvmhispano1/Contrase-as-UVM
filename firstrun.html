@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/firstrun.css">
+    <title>UVM Contraseñas</title>
+  </head>
+  <body>
+    <div id="bienvenue" class="hidden">
+      <h1>Te damos la bienvenida.</h1>
+    </div>
+    <div id="login" class="hidden">
+      <br><br><br><br>
+      <h2>Primero, creemos una cuenta.</h2><br><br>
+      <input id="name" type="text" placeholder="Nombre" required><br>
+      <input id="email" type="email" placeholder="Correo electrónico" required><br>
+      <input id="phone" type="tel" placeholder="Número de teléfono" required>
+      <div id="error" class="hidden">
+      </div><br><br>
+      <button id="submit">Comenzar</button>
+    </div>
+    <div id="verify" class="hidden">
+      <br><br><br><br>
+      <h2>Ahora introduce el código que<br>se te envió por email.</h2><br><br>
+      <input id="code" type="text" placeholder="Código" required>
+      <div id="errorv" class="hidden">
+      </div><br><br>
+      <button id="submitv">Verificar</button><br>
+      <a id="goback" href="#">¡Ups! Puse mal mis datos.</a>
+    </div>
+  </body>
+  <script src="js/firstrun.js"></script>
+</html>
